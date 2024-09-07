@@ -65,6 +65,18 @@ header{
     border-bottom: 3px solid firebrick;
 }
 
+.header__nav-contact{
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    background-color: firebrick;
+    color: #fff;
+}
+.header__nav-contact:hover{
+    background-color: firebrick;
+    border: none;
+    opacity: .8;
+}
+
 .header__logo{
     color: #fff;
     font-size: 2.5rem;
