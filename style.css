@@ -32,6 +32,14 @@ body{
 }
 
 /*Header Section*/
+
+header{
+    grid-area: header;
+    background-color: #222222;
+    color: #fff;
+    padding: 0 1rem;
+}
+
 .header__btn-menu{
     cursor: pointer;
     top: 1rem;
