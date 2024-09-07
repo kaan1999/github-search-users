@@ -148,3 +148,21 @@ header{
 .search-results__container-auto-fit{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
 }
+
+.search-results__card{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: ghostwhite;
+    padding: 1.3rem .8rem;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem 1rem;
+    position: relative;
+}
+.search-results__about{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+}
