@@ -48,6 +48,13 @@ header{
     align-items: center;
 }
 
+.header__navbar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
 .header__btn-menu{
     cursor: pointer;
     top: 1rem;
