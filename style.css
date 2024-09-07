@@ -131,3 +131,9 @@ header{
     top: 0;
     right: 0;
 }
+
+/*Users Section*/
+.users{
+    background: #eee;
+    padding: 3rem 1rem;
+}
