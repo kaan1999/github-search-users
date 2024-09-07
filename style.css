@@ -108,6 +108,18 @@ header{
     border-bottom: .1rem solid firebrick;
 }
 
+.header__btn-search{
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+.header__btn-search:hover{
+    color: firebrick;
+}
+
 .header__btn-menu{
     cursor: pointer;
     top: 1rem;
