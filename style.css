@@ -132,7 +132,7 @@ header{
     right: 0;
 }
 
-/*Users Section*/
+/*search-result Section*/
 .search-result{
     grid-area: main;
     background: #eee;
@@ -167,6 +167,55 @@ header{
     grid-template-rows: auto auto;
 }
 
-.users__about > img{
+.search-result__about > img{
     grid-row: 1 / -1;
+}
+
+.search-result__name{
+    font-size: 1.4rem;
+    font-weight: 720;
+    line-height: 2rem;
+    border-bottom: .1rem solid black;
+    max-width: max-content;
+}
+.search-result__avatar{
+    height: 150px;
+    border-radius: 50%;
+    border: .2rem solid darkgrey;
+}
+.search-result__username{
+    font-size: 1.08rem;
+    font-weight: 200;
+    opacity: 0.8;
+}
+
+.search-result__info{
+    align-self: start;
+    font-size: .9rem;
+    font-weight: 300;
+}
+.search-result__info > li{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+.search-result__link{
+    align-self: end;
+    color: #fff;
+    background: firebrick;
+    padding: .3rem .7rem;
+    font-size: .9rem;
+    font-weight: 300;
+}
+.search-result__link:hover{
+    opacity: .9;
+}
+.search-result__bio{
+    flex-grow: 1;
+    max-height: 100px;
+    overflow-y: scroll;
+    font-size: 1rem;
+    font-weight: 300;
+    align-self: start;
+    width: 100%;
 }
