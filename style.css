@@ -19,4 +19,6 @@ ul, li{
 
 body{
     font-family: "SUSE", sans-serif;
+    min-height: 100vh;
+    height: 100%;
 }
