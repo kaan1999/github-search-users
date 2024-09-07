@@ -138,18 +138,18 @@ header{
     background: #eee;
     padding: 3rem 1rem;
 }
-.search-results__container{
+.search-result__container{
     max-width: 1300px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 1rem;
 }
-.search-results__container-auto-fit{
+.search-result__container-auto-fit{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
 }
 
-.search-results__card{
+.search-result__card{
     display: flex;
     flex-direction: column;
     gap: .75rem;
@@ -161,7 +161,7 @@ header{
     box-shadow: .2rem .2rem 1rem;
     position: relative;
 }
-.search-results__about{
+.search-result__about{
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto auto;
@@ -218,4 +218,38 @@ header{
     font-weight: 300;
     align-self: start;
     width: 100%;
+}
+
+/*Footer Section*/
+footer{
+    background: #222222;
+    color: white;
+    padding: 0 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.footer__container{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social{
+    display: flex;
+    gap: 1rem;
+}
+.footer__social-link{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.footer__social-link:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__info, .footer__info{
+    font-size: .85rem;
+    font-weight: 200;
 }
