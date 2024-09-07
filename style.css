@@ -133,8 +133,18 @@ header{
 }
 
 /*Users Section*/
-.users{
+.search-result{
     grid-area: main;
     background: #eee;
     padding: 3rem 1rem;
+}
+.search-results__container{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1rem;
+}
+.search-results__container-auto-fit{
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
 }
