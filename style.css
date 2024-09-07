@@ -65,6 +65,12 @@ header{
     border-bottom: 3px solid firebrick;
 }
 
+.header__logo{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 650;
+}
+
 .header__btn-menu{
     cursor: pointer;
     top: 1rem;
