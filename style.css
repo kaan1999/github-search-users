@@ -62,7 +62,7 @@ header{
 }
 
 .header__nav-link:hover{
-    border-bottom: 3px solid var(--clr-body);
+    border-bottom: 3px solid firebrick;
 }
 
 .header__btn-menu{
