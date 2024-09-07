@@ -58,7 +58,11 @@ header{
 .header__nav-link{
     font-size: 1.175rem;
     font-weight: 300;
-    color: var(--clr-light);
+    color: #fff;
+}
+
+.header__nav-link:hover{
+    border-bottom: 3px solid var(--clr-body);
 }
 
 .header__btn-menu{
