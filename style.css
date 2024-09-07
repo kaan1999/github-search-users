@@ -83,6 +83,13 @@ header{
     font-weight: 650;
 }
 
+.header__search-bar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .header__input-user{
     line-height: 1.4rem;
     padding-left: 1.9rem;
