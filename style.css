@@ -134,6 +134,7 @@ header{
 
 /*Users Section*/
 .users{
+    grid-area: main;
     background: #eee;
     padding: 3rem 1rem;
 }
