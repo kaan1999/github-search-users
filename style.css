@@ -30,3 +30,10 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
 }
+
+/*Header Section*/
+.header__btn-menu{
+    cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+}
