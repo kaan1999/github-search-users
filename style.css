@@ -37,3 +37,9 @@ body{
     top: 1rem;
     right: 1rem;
 }
+
+.header__btn-menu-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
