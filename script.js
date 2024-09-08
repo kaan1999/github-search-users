@@ -1,13 +1,20 @@
+'use strict';
+
 window.onload = () => 
     {
-        const accessToken = null;
-        //Header Navbar
-        const navbar = document.querySelector('.header__navbar');
+        const navbar = document.querySelector('.header__navbar');        
         const btnMenuOpen = document.querySelector('.header__btn-menu-open');
-    
-        
+        const btnAbout = document.querySelector('.header__nav-about');
+        const btnHome = document.querySelector('.header__nav-home');
+        const btnSearch = document.querySelector('.header__btn-search');
+        const sectionSearchResultContainer = document.querySelector('.search-result__container');
+        const inputSearch = document.querySelector('.header__input-user');
+        const userCards = [];
+        const sectionAbout = document.querySelector('.search-result__about');
         navbar.classList.add('hide');
-    
+        
+        const accessToken = prompt('Enter Your Github API Acess Token'); 
+
         btnMenuOpen.addEventListener('click', e => {
             navbar.classList.toggle('hide');
         })
@@ -27,6 +34,10 @@ window.onload = () =>
         //Search Result
     
         function createUserCard({login, avatar_url, html_url, name, company, location, bio}) {
+            if(!login) login = '';
+            if(!company) company = '';
+            if(!location) location = '';
+            if(!bio) bio = '';
             //user card divider
             const userCard = document.createElement('div');
             userCard.classList.add('search-result__card');
@@ -67,15 +78,19 @@ window.onload = () =>
         }
     
         async function fetchUsers(searchTerm) {
-            const response = await fetch(`https://api.github.com/search/users?q=${searchTerm}`, {
-                headers: {
-                    'Authorization': `Bearer ${accessToken}`
-                }
-            });
-            if(!response.ok)
-                throw new Error(`Response Status: ${response.status}`);
-            const users = await response.json();
-            users.items.forEach(user => fetchUser(user));
+            try {
+                const response = await fetch(`https://api.github.com/search/users?q=${searchTerm}`, {
+                    headers: {
+                        'Authorization': `Bearer ${accessToken}`
+                    }
+                });
+                if(!response.ok)
+                    throw new Error(`Response Status: ${response.status}`);
+                const users = await response.json();
+                users.items.forEach(user => fetchUser(user));
+            } catch (error) {
+                alert(error);
+            }
         }
         
         btnSearch.addEventListener('click', e => {
@@ -89,9 +104,12 @@ window.onload = () =>
                 alert('Error');
                 return false;
             }
-    
-            fetchUsers(searchTerm);
+                fetchUsers(searchTerm);
             inputSearch.value = '';
+        })
+        inputSearch.addEventListener('keypress', e => {
+            if(e.key === 'Enter')
+                btnSearch.click();
         })
     }
     

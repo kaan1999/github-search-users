@@ -49,10 +49,18 @@ header{
 }
 
 .header__navbar{
+    width: 250px;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background: #222222;
+    padding: 1rem 1rem;
+
     display: flex;
     align-items: center;
     gap: 1rem;
-    position: relative;
+    opacity: .9;
 }
 
 .header__nav-link{
@@ -70,13 +78,23 @@ header{
     border-radius: 2rem;
     background-color: firebrick;
     color: #fff;
+    border-bottom: none;
+    text-align: center;
 }
 .header__nav-contact:hover{
     background-color: firebrick;
     border: none;
     opacity: .8;
 }
-
+.header__logo-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header__github{
+    width: 50px;
+    height: 50px;
+}
 .header__logo{
     color: #fff;
     font-size: 2.5rem;
@@ -126,10 +144,9 @@ header{
     right: 1rem;
 }
 
-.header__btn-menu-close{
-    position: absolute;
-    top: 0;
-    right: 0;
+.header__btn-menu-open:hover{
+    color: firebrick;
+    opacity: .9;
 }
 
 /*search-result Section*/
@@ -193,6 +210,9 @@ header{
     align-self: start;
     font-size: .9rem;
     font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
 }
 .search-result__info > li{
     display: flex;
@@ -253,3 +273,10 @@ footer{
     font-size: .85rem;
     font-weight: 200;
 }
+
+.hide{
+    display: none !important;
+}
+
+/*Responsive Design*/
+

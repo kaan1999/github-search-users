@@ -10,16 +10,30 @@
   <title>Github User Search</title>
 </head>
 <body>
-
+  <script src="script.js"></script>
   <!--Header Section-->
   <header>
     <div class="header__container">
-      <a class="header__logo" href="index.html">Search Github User</a>
-      <div class="header__search-bar">
-        <i class="header__btn-search fa-solid fa-magnifying-glass"></i>
-        <input class="header__input-user" type="search" placeholder="Search for a user">
+      <div class="header__logo-container">
+        <img class="header__github" src="img/github-mark-white.png" alt="" srcset="">
+        <a class="header__logo" href="index.html">GithubUserSearch</a>
       </div>
-      <i class="header__btn-menu header__btn-menu-open fa-solid fa-bars"></i>
+      
+      
+      <div class="header__search-and-menu">
+        <div class="header__search-bar">
+          <i class="header__btn-search fa-solid fa-magnifying-glass"></i>
+          <input class="header__input-user" type="search" placeholder="Search for a user">
+        </div>
+        <i class="header__btn-menu header__btn-menu-open fa-solid fa-bars"></i>
+      </div>
+
+    </div>
+  </header>
+  <!--Search Result Section-->
+  <section class="search-result">
+    
+    <div class="search-result__container">
       <nav class="header__navbar">
         <i class="header__btn-menu header__btn-menu-close fa-solid fa-x"></i>
         <a class="header__nav-link header__nav-home">Home</a>
