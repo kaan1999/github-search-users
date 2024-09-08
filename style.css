@@ -299,3 +299,30 @@ footer{
 
 /*Responsive Design*/
 
+@media screen and (max-width: 1120px) {
+    .search-result__container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .header__logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .search-result__about{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+    .search-result__about > h1{
+        grid-row: 1 / 2;
+        border-bottom: .1rem solid #222222;
+    }
+    .search-result__about > img{
+        grid-row: 2 / 3;
+    }
+    .footer__container{
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
