@@ -49,8 +49,6 @@ header{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
 .header__navbar{
@@ -168,8 +166,6 @@ header{
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 1rem;
     position: relative;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
 }
 .search-result__container-auto-fit{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
@@ -186,7 +182,6 @@ header{
     border-radius: 1rem;
     box-shadow: .2rem .2rem 1rem;
     position: relative;
-    
 }
 .search-result__about{
     display: grid;
