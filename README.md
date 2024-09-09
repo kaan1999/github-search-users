@@ -1,8 +1,8 @@
 # Github Search Users
 
-Github Search Users, Github kullanıcılarını aramak için geliştirilmiş bir web projesidir.
-HTML, CSS, Javascript ve Github API kullanılarak geliştirilmiştir.
-Kullanım için bir API Access token oluşturmanız gerekmektedir.
+Github Search Users is a web project designed to search for Github users.
+It was developed using HTML, CSS, Javascript and the Github API.
+You will need to create an API access token to use it.
 
 ## Creating a fine-grained personal access token
 
