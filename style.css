@@ -309,6 +309,9 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+    body{
+        min-width: 325px;
+    }
     .search-result__container{
         grid-template-columns: 1fr;
     }

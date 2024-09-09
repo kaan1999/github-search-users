@@ -2,6 +2,7 @@
 
 window.onload = () => 
     {
+        const body = document.querySelector('body');
         const navbar = document.querySelector('.header__navbar');        
         const btnMenuOpen = document.querySelector('.header__btn-menu-open');
         const btnAbout = document.querySelector('.header__nav-about');
@@ -16,6 +17,7 @@ window.onload = () =>
         const accessToken = prompt('Enter Your Github API Acess Token'); 
 
         btnMenuOpen.addEventListener('click', e => {
+            e.stopPropagation(); 
             navbar.classList.toggle('hide');
         })
     
@@ -23,14 +25,19 @@ window.onload = () =>
             userCards.forEach(userCard => userCard.classList.add('hide'));
             sectionAbout.classList.remove('hide');
             sectionSearchResultContainer.classList.add('search-result__container-auto-fit');
+            btnMenuOpen.click();
         })
     
         btnHome.addEventListener('click', e => {
             userCards.forEach(userCard => userCard.classList.remove('hide'));
             sectionAbout.classList.add('hide');
             sectionSearchResultContainer.classList.remove('search-result__container-auto-fit');
+            btnMenuOpen.click();
         })
     
+        body.addEventListener('click', e => {
+            if(!navbar.classList.contains('hide')) btnMenuOpen.click();
+        })
         //Search Result
     
         function createUserCard({login, avatar_url, html_url, name, company, location, bio}) {
@@ -94,6 +101,7 @@ window.onload = () =>
         }
         
         btnSearch.addEventListener('click', e => {
+            btnHome.click();
             const cards = Array.from(sectionSearchResultContainer.children);
             cards.forEach(card => {
                 if(card.classList.contains('search-result__card') && !card.classList.contains('search-result__about'))

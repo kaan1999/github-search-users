@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!--Font Awesome-->
   <script src="https://kit.fontawesome.com/3f9b0bfe0f.js" crossorigin="anonymous"></script>
@@ -9,18 +10,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Github User Search</title>
 </head>
+
 <body>
   <script src="script.js"></script>
 
   <!--Header Section-->
   <header>
     <div class="header__container">
-      <div class="header__logo-container">
+      <div class="header__logo-container" href="index.html">
         <img class="header__github" src="img/github-mark-white.png" alt="" srcset="">
         <a class="header__logo" href="index.html">GithubUserSearch</a>
       </div>
-      
-      
       <div class="header__search-and-menu">
         <div class="header__search-bar">
           <i class="header__btn-search fa-solid fa-magnifying-glass"></i>
@@ -33,7 +33,7 @@
   </header>
   <!--Search Result Section-->
   <section class="search-result">
-    
+
     <div class="search-result__container">
       <nav class="header__navbar">
         <a class="header__nav-link header__nav-home">Home</a>
@@ -44,7 +44,9 @@
         <img src="img/github-mark.png" alt="github-mark">
         <h1>About</h1>
         <p>
-          GithubUser is a small website I developed to improve myself in Front-End. The purpose of the project is to display information on the page of users whose Github username you know. The project was developed using HTML, CSS and Javascript. Github API is used in the project to fetch user's information.
+          GithubUser is a small website I developed to improve myself in Front-End.
+          The aim of the project is to search for github users using the Github API.
+          You need a Github access token to use the site.
         </p>
       </div>
     </div>
@@ -69,4 +71,5 @@
   </footer>
 
 </body>
+
 </html>
